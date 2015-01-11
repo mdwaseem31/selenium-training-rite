@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="JetBlueFFTestSuite" parallel="false">
+  
+      <test name="NewReservationTest">
+    <classes>
+      <class name="com.Day6_TestNG_Demo.JetBlueFFNewReservationTest"/>
+    </classes>
+  </test> <!-- 1st Test -->
+ 
+     <test name="CustomerUpdateAccountTest">
+    <classes>
+      <class name="com.Day6_TestNG_Demo.JetBlueFFCustomerUpdateAccountTest"/>
+    </classes>
+  </test> <!-- 2nd Test -->
+  
+  <test name="CustomerNewAccountTest">
+    <classes>
+      <class name="com.Day6_TestNG_Demo.JetBlueFFCustomerNewAccountTest"/>
+    </classes>
+  </test> <!-- 3rd Test -->
+  
+</suite>
