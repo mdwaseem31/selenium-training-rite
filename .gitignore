@@ -1,5 +1,7 @@
-.class
-.classpath
-.eclipse
-.DS_STORE
+*.class
+*.classpath
+*.eclipse
+*.DS_STORE
+bin/*
+
 
