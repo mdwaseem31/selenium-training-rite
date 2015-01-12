@@ -55,12 +55,12 @@ public class Day3_WD_JUnit4_Screencast {
 
 	@Test
 	public void test_Login() {
-		//Some code here
+		//Some code here--
 	}
 	
 	@After
 	public void tearDown() throws Exception {
-		//some code here
+		//some code here--
 	}
 	
 }
