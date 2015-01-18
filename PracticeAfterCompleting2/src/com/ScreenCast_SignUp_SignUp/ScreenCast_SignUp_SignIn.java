@@ -22,7 +22,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
 
-public class ScreenCast_SignUp_SignUp {
+public class ScreenCast_SignUp_SignIn {
 
 	String BrowType;
 	String BrowPath;
