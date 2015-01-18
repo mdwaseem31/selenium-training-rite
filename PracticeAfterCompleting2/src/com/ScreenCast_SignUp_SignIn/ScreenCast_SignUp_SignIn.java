@@ -1,4 +1,4 @@
-package com.ScreenCast_SignUp_SignUp;
+package com.ScreenCast_SignUp_SignIn;
 
 import static org.junit.Assert.*;
 
