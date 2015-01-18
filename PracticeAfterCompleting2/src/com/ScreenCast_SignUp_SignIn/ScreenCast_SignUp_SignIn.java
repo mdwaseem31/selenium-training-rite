@@ -1,12 +1,15 @@
 package com.ScreenCast_SignUp_SignIn;
 
+
+
 import static org.junit.Assert.*;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.bcel.generic.Select;
+
+
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -19,8 +22,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.Select;
 
-
+/**
+ * This test is for testing Screencast SignUp and SignIn functionality
+ * @author - WMohammed
+ * 
+ */
 
 public class ScreenCast_SignUp_SignIn {
 
@@ -101,7 +109,8 @@ public class ScreenCast_SignUp_SignIn {
 		driver.findElement(By.id("password1")).sendKeys(Password);
 		driver.findElement(By.id("password2")).sendKeys(Password);
 		driver.findElement(By.id("displayName")).sendKeys(DisplayName);
-		//new Select(driver.findElement(By.id("countrySelect"))).
+		//new Select(driver.findElement(By.id("countrySelect")))
+		new Select (driver.findElement(By.id("countrySelect"))).selectByVisibleText(Country);
 		driver.findElement(By.id("signUpButton")).click();
 		String VerifySignUpMsg = driver.findElement(By.xpath("//*[@id='container']/div[3]/h3")).getText();
 		if(VerifySignUpMsg.equals(ExpSignUpConfMsg)) {
@@ -119,7 +128,6 @@ public class ScreenCast_SignUp_SignIn {
 //		driver = new ChromeDriver();
 //		driver.manage().window().maximize();
 //		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
 		//driver.get(URL);
 		Thread.sleep(5000);
 		System.out.println("Email Address : " + EmailAddress + " and Password is : " + Password);
